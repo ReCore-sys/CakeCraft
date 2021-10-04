@@ -1,0 +1,1 @@
+<recipetype:tconstruct:melting>.removeByName("tconstruct:smeltery/melting/metal/osmium/ore");
