@@ -1,0 +1,364 @@
+{
+	id: "4FD16811BF9CAC8E"
+	group: ""
+	order_index: 1
+	filename: "industry"
+	title: "Industry"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Getting started"
+			x: -6.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Andesite alloy is a hardened stone-like material used in a variety of mechanical applications, and forms the basis of most basic machinery!"]
+			size: 2.0d
+			id: "23DA330AB493494E"
+			tasks: [{
+				id: "69D449615EB049D6"
+				type: "item"
+				item: "create:andesite_alloy"
+			}]
+		}
+		{
+			title: "Wheels of progress"
+			x: -3.0d
+			y: 0.0d
+			description: ["A water wheel does what it says on the tin- set it spinning with water, and you can use it to rotate things using cogs and shafts!"]
+			dependencies: ["23DA330AB493494E"]
+			id: "0C55CD7E7CE67BB1"
+			tasks: [{
+				id: "2AAD6EF78AB22571"
+				type: "item"
+				item: "create:water_wheel"
+			}]
+		}
+		{
+			title: "Winds of change"
+			x: -3.0d
+			y: -1.5d
+			description: ["Create a windmill bearing, the basis for a multiblock windmill- the more wool blocks or windmill sails attached, the faster it'll spin and the more stress capacity it'll have! A much better way to run your factory than a waterwheel."]
+			dependencies: ["0C55CD7E7CE67BB1"]
+			id: "6857D994D6A104ED"
+			tasks: [{
+				id: "7E33C5CAA66BA1C1"
+				type: "item"
+				item: "create:windmill_bearing"
+			}]
+		}
+		{
+			title: "Just in case"
+			x: -1.0d
+			y: 0.0d
+			description: ["Andesite casing are a simple but sturdy frame that can be used to make all sorts of basic machines!"]
+			dependencies: ["0C55CD7E7CE67BB1"]
+			id: "1447D9F8AB595FD9"
+			tasks: [{
+				id: "48226F291CCC0DED"
+				type: "item"
+				item: "create:andesite_casing"
+			}]
+		}
+		{
+			title: "Not a bathtub"
+			x: 1.0d
+			y: 0.0d
+			description: ["It's a basin! A basin can be used to hold things (wow!) and- even better- mix them together! Provided you have a mechanical mixer, anyway."]
+			dependencies: ["1447D9F8AB595FD9"]
+			id: "4720B71E22D88541"
+			tasks: [{
+				id: "4D64F3083C9EA301"
+				type: "item"
+				item: "create:basin"
+			}]
+		}
+		{
+			title: "Metal mashing"
+			x: 1.0d
+			y: -1.5d
+			description: ["A mechanical press will allow you to compress metal ingots into sheets, among other things!"]
+			dependencies: ["1447D9F8AB595FD9"]
+			id: "3EAF1B650853FA30"
+			tasks: [{
+				id: "60746C1461932CD2"
+				type: "item"
+				item: "create:mechanical_press"
+			}]
+		}
+		{
+			title: "Mixing it up"
+			x: 3.0d
+			y: 0.0d
+			description: ["Craft a mechanical mixer! Place it over a basin to mix things, mechanically"]
+			dependencies: [
+				"3EAF1B650853FA30"
+				"4720B71E22D88541"
+			]
+			id: "614E84828A9920B9"
+			tasks: [{
+				id: "62875C9DF6469D76"
+				type: "item"
+				item: "create:mechanical_mixer"
+			}]
+		}
+		{
+			title: "TBE (To be enslaved)"
+			x: 3.0d
+			y: -1.5d
+			description: ["Create a blaze burner! This nifty little thing acts like a miniature prison cell, capturing blazes when you click on them- you can even grab them straight from the spawner!"]
+			dependencies: ["3EAF1B650853FA30"]
+			id: "0A762947B73CAABE"
+			tasks: [{
+				id: "72C23DA7DFA8A332"
+				type: "item"
+				item: "create:empty_blaze_burner"
+			}]
+		}
+		{
+			title: "It's getting hot in here"
+			x: 5.0d
+			y: -1.5d
+			description: ["So hot! Now that you've captured a blaze in your burner, you can put it underneath your basin to melt things as you mix them together! Make sure to feed the blaze some fuel first. "]
+			dependencies: ["0A762947B73CAABE"]
+			id: "1206D5D80A1CF180"
+			tasks: [{
+				id: "626FE0442945C4A3"
+				type: "item"
+				item: "create:blaze_burner"
+			}]
+		}
+		{
+			title: "Not quite gold"
+			x: 5.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Though it is pretty shiny, isn't it! This new material, brass, is used in all sorts of fancier mechanical contraptions, like mechanical crafters, mechanical arms, or sequenced gearshifts!"]
+			dependencies: [
+				"1206D5D80A1CF180"
+				"614E84828A9920B9"
+			]
+			size: 1.5d
+			id: "73E7616951DFF98B"
+			tasks: [{
+				id: "274EF755BDC86C4E"
+				type: "item"
+				item: "create:brass_ingot"
+			}]
+		}
+		{
+			title: "I saw this coming"
+			x: -1.0d
+			y: 1.5d
+			description: ["Create a mechanical saw! A mechanical saw can allow you to get higher quantities of planks from each log, as well as allowing you to automate stonecutting"]
+			dependencies: ["1447D9F8AB595FD9"]
+			id: "61D60FF83C8BBE67"
+			tasks: [{
+				id: "777AE0E45F725CCB"
+				type: "item"
+				item: "create:mechanical_saw"
+			}]
+		}
+		{
+			title: "Not a fan of all these puns"
+			x: -1.0d
+			y: -1.5d
+			description: ["An encased fan allows you to blow yourself and items around the room! Attach one to some chutes and you can send items upwards, or place lava in front for a fuel-less furnace!"]
+			dependencies: ["1447D9F8AB595FD9"]
+			id: "64C4095F57C97157"
+			tasks: [{
+				id: "55306D8643FF549B"
+				type: "item"
+				item: "create:encased_fan"
+			}]
+		}
+		{
+			title: "Aesthetically minded"
+			x: -3.0d
+			y: 1.5d
+			description: ["Brackets are a purely cosmetic feature to add a little spice to your mechanical systems. Aesthetic over practicality!"]
+			dependencies: ["1447D9F8AB595FD9"]
+			id: "0E00E002738EA346"
+			tasks: [{
+				id: "70E4B75C5B13F6FC"
+				type: "item"
+				item: "create:metal_bracket"
+			}]
+		}
+		{
+			title: "Ploughing through the sidequests"
+			x: -1.0d
+			y: 4.5d
+			description: ["A mechanical plow is a sibling to the mechanical harvester, also working to remove things like torches or redstone or rails in front of it!"]
+			dependencies: ["2232FAE85434399C"]
+			id: "30A4372BF0FB92CE"
+			tasks: [{
+				id: "3022F5CA2519FB6C"
+				type: "item"
+				item: "create:mechanical_plough"
+			}]
+		}
+		{
+			title: "Automatic agriculture"
+			x: -1.0d
+			y: 3.0d
+			description: ["A mechanical harvester will automatically harvest and replant any crops it passes over! Attach it to a moving chassis for best results"]
+			dependencies: ["61D60FF83C8BBE67"]
+			id: "2232FAE85434399C"
+			tasks: [{
+				id: "313BA7F1AB4F4E34"
+				type: "item"
+				item: "create:mechanical_harvester"
+			}]
+		}
+		{
+			title: "Mechanically minded"
+			x: 1.0d
+			y: 1.5d
+			description: ["A speedometer displays a nice dial showing just how fast your machines are running. Wear engineers goggles to get a more precise readout!"]
+			dependencies: ["1447D9F8AB595FD9"]
+			id: "649BE5B27B3564DD"
+			tasks: [{
+				id: "76FBDAE2DC9673C1"
+				type: "item"
+				item: "create:speedometer"
+			}]
+		}
+		{
+			title: "Eyes of an engineer"
+			x: 1.0d
+			y: -3.0d
+			description: ["Engineers goggles will allow you to see more precise readouts of the stress and speed of your systems!"]
+			dependencies: ["3EAF1B650853FA30"]
+			id: "1BB5AD74BF659C83"
+			tasks: [{
+				id: "6CA72D2C2154D966"
+				type: "item"
+				item: "create:goggles"
+			}]
+		}
+		{
+			title: "Heart wrenching"
+			x: 3.0d
+			y: -3.0d
+			description: ["Probably don't use it on your heart, actually. A wrench will let you break your mechanical components directly into your inventory, with just a single click! Much easier than getting out your pickaxe."]
+			dependencies: ["1BB5AD74BF659C83"]
+			id: "24400B861E215579"
+			tasks: [{
+				id: "29B5F291F72A9868"
+				type: "item"
+				item: "create:wrench"
+			}]
+		}
+		{
+			title: "First autocrafting"
+			x: 7.5d
+			y: 0.0d
+			description: ["A mechanical crafter functions as a single slot in a crafting grid- this flexibility allows them to make things too large and complex for a regular crafting table, like crushing wheels!"]
+			dependencies: ["73E7616951DFF98B"]
+			id: "59A8E46AC3CD00CA"
+			tasks: [{
+				id: "7FEC2091B2043EB6"
+				type: "item"
+				item: "create:mechanical_crafter"
+			}]
+		}
+		{
+			title: "Crushing the competition"
+			x: 9.5d
+			y: 0.0d
+			description: ["Crushing wheels are rather powerful pieces of machinery, able to mash straight through materials too hard for anything else you have available- so far, anyway."]
+			dependencies: ["59A8E46AC3CD00CA"]
+			id: "3C4558D7A303D715"
+			tasks: [{
+				id: "036620E02F4B2A16"
+				type: "item"
+				item: "create:crushing_wheel"
+			}]
+		}
+		{
+			title: "Careful machinations"
+			x: 3.0d
+			y: 1.5d
+			description: ["A precision mechanism is a small but clever piece of clockwork used to power more smart pieces of machinery, like mechanical arms or rotation speed controllers!"]
+			dependencies: ["73E7616951DFF98B"]
+			id: "021F8C4ED9472FC9"
+			tasks: [{
+				id: "6A635E38D557DB1C"
+				type: "item"
+				item: "create:precision_mechanism"
+			}]
+		}
+		{
+			title: "Speed settings"
+			x: 1.0d
+			y: 3.0d
+			shape: "circle"
+			description: ["A rotation speed controller allows you to control the rotation speed of your networks- who would've guessed?"]
+			dependencies: [
+				"021F8C4ED9472FC9"
+				"649BE5B27B3564DD"
+			]
+			id: "4AC84DCC36573CC0"
+			tasks: [{
+				id: "3DB1A57C7011C80B"
+				type: "item"
+				item: "create:rotation_speed_controller"
+			}]
+		}
+		{
+			title: "Going through the motions"
+			x: 1.0d
+			y: 4.5d
+			description: ["A sequential gearshift allows you to set up a series of steps for the system to go through upon receiving a redstone signal"]
+			dependencies: ["4AC84DCC36573CC0"]
+			id: "41A71509B9C6A1BC"
+			tasks: [{
+				id: "42B5DBA588F292F9"
+				type: "item"
+				item: "create:sequenced_gearshift"
+			}]
+		}
+		{
+			title: "Blown away"
+			x: -1.0d
+			y: -3.0d
+			description: ["Chutes allow you to transfer items downwards or diagonally much faster than a hopper can- and, with a few fans, you can set the items moving upwards too!"]
+			dependencies: ["64C4095F57C97157"]
+			id: "1DA11517FB6E634C"
+			tasks: [{
+				id: "1C54217A3CF717E0"
+				type: "item"
+				item: "create:chute"
+			}]
+		}
+		{
+			title: "Don't huff it!"
+			x: 11.5d
+			y: 0.0d
+			description: ["Powdered obsidian allows you to bind materials together with more strength and higher temperature ranges, allowing for the construction of coke ovens and blast furnaces"]
+			dependencies: ["3C4558D7A303D715"]
+			id: "77DA6A9F9537ED39"
+			tasks: [{
+				id: "7C485462DAE6B99C"
+				type: "item"
+				item: "create:powdered_obsidian"
+			}]
+		}
+		{
+			title: "No, not that kind of coke"
+			x: 13.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["A coke oven, made by hitting a 3x3 cube of coke bricks with an engineers hammer, cooks the impurities out of coal, producing a purer fuel source as well as creosote oil, used in treated wood. These materials together unlock the electrical age"]
+			dependencies: ["77DA6A9F9537ED39"]
+			size: 2.0d
+			id: "24F8732BEE338B7F"
+			tasks: [{
+				id: "40B8960B682E4DD4"
+				type: "item"
+				item: "immersiveengineering:cokebrick"
+			}]
+		}
+	]
+}

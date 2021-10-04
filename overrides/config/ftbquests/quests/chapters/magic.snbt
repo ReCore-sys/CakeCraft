@@ -1,0 +1,424 @@
+{
+	id: "732F1CF06EAD4822"
+	group: ""
+	order_index: 0
+	filename: "magic"
+	title: "Magic"
+	icon: "eidolon:gold_inlay"
+	default_quest_shape: ""
+	default_hide_dependency_lines: false
+	quests: [
+		{
+			title: "Magical beginnings"
+			x: -8.5d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Eidolon will be the gateway to your path as a magician, and what better way to get started on this path than by making yourself a guidebook?"]
+			size: 2.0d
+			id: "41D2DC0F65E3FCA3"
+			tasks: [{
+				id: "6AE2921E72B65D7E"
+				type: "item"
+				item: "eidolon:codex"
+			}]
+		}
+		{
+			title: "It's not steel!"
+			x: -4.0d
+			y: 0.0d
+			shape: "hexagon"
+			description: ["Create an ingot of pewter- a metal that may look like steel, but is prized for it's magical properties, not structural ones."]
+			dependencies: ["41D2DC0F65E3FCA3"]
+			dependency_requirement: "all_started"
+			id: "52CCBF9D86ABE94A"
+			tasks: [{
+				id: "14835142BA2EA32C"
+				type: "item"
+				item: "eidolon:pewter_ingot"
+			}]
+		}
+		{
+			title: "Now you're cooking with.. magic?"
+			x: -2.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["Create a crucible using some of your pewter! This cauldron-like device is excellent for combining magical ingredients. "]
+			dependencies: ["52CCBF9D86ABE94A"]
+			dependency_requirement: "one_completed"
+			id: "0B18DE0D5EE52D24"
+			tasks: [{
+				id: "59106F217304B32C"
+				type: "item"
+				item: "eidolon:crucible"
+			}]
+		}
+		{
+			title: "Nice handiwork!"
+			x: -2.0d
+			y: 1.5d
+			description: ["A stone hand is used to hold extra items for rituals- a brazier only has so much space!"]
+			dependencies: ["52CCBF9D86ABE94A"]
+			id: "16F78D6F6B6D4FAC"
+			tasks: [{
+				id: "00E2DB32DE3D4ECA"
+				type: "item"
+				item: "eidolon:stone_hand"
+			}]
+		}
+		{
+			title: "Burn it all!!"
+			x: -2.0d
+			y: 0.0d
+			description: ["Use your pewter to create a brazier, used in magical rituals to create special items or effects!"]
+			dependencies: ["52CCBF9D86ABE94A"]
+			id: "019B3CABCFAE4E6C"
+			tasks: [{
+				id: "05949F0F6A38E385"
+				type: "item"
+				item: "eidolon:brazier"
+			}]
+		}
+		{
+			title: "Soul-sucking"
+			x: 0.0d
+			y: 0.0d
+			description: ["Perform the crystallization ritual using your new brazier to steal the souls of some undead! These magical crystals are imbued with the energy of the zombies you probably used to make them. "]
+			dependencies: [
+				"16F78D6F6B6D4FAC"
+				"019B3CABCFAE4E6C"
+			]
+			id: "2B89B11813536F18"
+			tasks: [{
+				id: "4D6173F5A5EC0138"
+				type: "item"
+				item: "eidolon:soul_shard"
+			}]
+		}
+		{
+			title: "Magical metal"
+			x: 0.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["Use your new crucible and soul shards to imbue gold with magical energy, creating arcane gold- useful for all sorts of magic!"]
+			dependencies: [
+				"2B89B11813536F18"
+				"0B18DE0D5EE52D24"
+			]
+			size: 1.5d
+			id: "00572B7ED768106B"
+			tasks: [{
+				id: "221424D9A87327BB"
+				type: "item"
+				item: "eidolon:arcane_gold_ingot"
+			}]
+		}
+		{
+			x: -4.0d
+			y: 1.5d
+			description: ["Create a magic workbench, used to make all sorts of neat items and trinkets!"]
+			dependencies: ["52CCBF9D86ABE94A"]
+			dependency_requirement: "all_started"
+			id: "04A98B0EF30D1A24"
+			tasks: [{
+				id: "0666B52954B0ECAB"
+				type: "item"
+				item: "eidolon:worktable"
+			}]
+		}
+		{
+			title: "Darker magic"
+			x: 0.0d
+			y: 1.5d
+			description: ["Create a shadow gem, a powerful magical item."]
+			dependencies: ["2B89B11813536F18"]
+			id: "5A329EE3C48C6971"
+			tasks: [{
+				id: "4D9323AFE3998BFE"
+				type: "item"
+				item: "eidolon:shadow_gem"
+			}]
+		}
+		{
+			title: "Avada kedavra!"
+			x: -2.0d
+			y: 3.0d
+			description: ["Use a shadow gem and your magic workbench to create a wand that fires projectiles of summer fun and totally not fire!"]
+			dependencies: [
+				"5A329EE3C48C6971"
+				"04A98B0EF30D1A24"
+			]
+			id: "6079F9A298F124E4"
+			tasks: [{
+				id: "062A723313A64853"
+				type: "item"
+				item: {
+					id: "eidolon:soulfire_wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Evil fabric?"
+			x: 0.0d
+			y: 3.0d
+			description: ["Imbue cloth with the power of a shadow gem, creating a fabric with powerful magical properties"]
+			dependencies: ["5A329EE3C48C6971"]
+			id: "796494B4C153EC2C"
+			tasks: [{
+				id: "4B2240A9DB81F4EA"
+				type: "item"
+				item: "eidolon:wicked_weave"
+			}]
+		}
+		{
+			title: "Nice hat!"
+			icon: {
+				id: "eidolon:warlock_hat"
+				Count: 1b
+				tag: {
+					Damage: 0
+				}
+			}
+			x: 2.0d
+			y: 3.0d
+			description: ["Use your new wicked weave to create a set of warlock armour, boosting your magical abilities!"]
+			dependencies: ["796494B4C153EC2C"]
+			id: "63BD37606DA2D1FA"
+			tasks: [
+				{
+					id: "7155CB6AB0083814"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_hat"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "575441E5DE558137"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_cloak"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+				{
+					id: "6976E97BBCF54704"
+					type: "item"
+					item: {
+						id: "eidolon:warlock_boots"
+						Count: 1b
+						tag: {
+							Damage: 0
+						}
+					}
+				}
+			]
+		}
+		{
+			title: "2 for 5"
+			x: -4.0d
+			y: 4.5d
+			description: ["Is this such a good deal? Create a glass hand, a special item that grants the wearer twice as much strength, but forces them to take five times as much damage."]
+			dependencies: ["5AF7FA17BE550C59"]
+			id: "0862AF8473B438E2"
+			tasks: [{
+				id: "54EA6D3F6E01E715"
+				type: "item"
+				item: "eidolon:glass_hand"
+			}]
+		}
+		{
+			title: "Chilling"
+			x: 0.0d
+			y: 4.5d
+			description: ["Create the ideal partner for your soulfire wand- the bonechill wand, freezing the health of your opponent- they can still take damage, but healing won't work while the effect is active"]
+			dependencies: ["6079F9A298F124E4"]
+			id: "7BEF371BBB556ECB"
+			tasks: [{
+				id: "66CAD1299FDBFBEA"
+				type: "item"
+				item: {
+					id: "eidolon:bonechill_wand"
+					Count: 1b
+					tag: {
+						Damage: 0
+					}
+				}
+			}]
+		}
+		{
+			title: "Don't be so dense"
+			x: -6.0d
+			y: 1.5d
+			description: ["Create a resolute belt! This bedazzled waistband looks absolutely brilliant holding up your pants. It also prevents any knockback, but that's less important."]
+			dependencies: ["04A98B0EF30D1A24"]
+			id: "171924F8FEB41ABD"
+			tasks: [{
+				id: "503230E83371C79D"
+				type: "item"
+				item: "eidolon:resolute_belt"
+			}]
+		}
+		{
+			title: "Moonwalking"
+			x: -6.0d
+			y: 3.0d
+			description: ["Create the gravity belt, which is even better looking! And it reduces the effects of gravity on the wearer, too, putting a lovely spring in your step"]
+			dependencies: ["171924F8FEB41ABD"]
+			id: "1FD9DE99FED8C2C3"
+			tasks: [{
+				id: "12C4FEFAB48456A7"
+				type: "item"
+				item: "eidolon:gravity_belt"
+			}]
+		}
+		{
+			title: "Shiney!"
+			x: -4.0d
+			y: 3.0d
+			description: ["Create a basic amulet! While it's not too useful alone, when combined with magical ingredients this can serve as a truly powerful artifact"]
+			dependencies: ["04A98B0EF30D1A24"]
+			id: "5AF7FA17BE550C59"
+			tasks: [{
+				id: "2923D6F2198CC16F"
+				type: "item"
+				item: "eidolon:basic_amulet"
+			}]
+		}
+		{
+			title: "Bloody jewelery"
+			x: -2.0d
+			y: 4.5d
+			description: ["Use a powerful ritual to create a sanguine amulet, a necklace that stores hearts when you're at full health and gives them back to you later on"]
+			dependencies: ["5AF7FA17BE550C59"]
+			id: "0A0E94B0DCE2FC13"
+			tasks: [{
+				id: "30C9753D9C9DECC6"
+				type: "item"
+				item: "eidolon:sanguine_amulet"
+			}]
+		}
+		{
+			title: "Void the warranty"
+			x: -6.0d
+			y: 4.5d
+			description: ["Create a void amulet, a delightful piece of jewellery that will void projectile attacks, though it will need a cooldown after each one"]
+			dependencies: ["5AF7FA17BE550C59"]
+			id: "30FDCCC1BEFE227F"
+			tasks: [{
+				id: "7918D2DF7B9FB6DC"
+				type: "item"
+				item: "eidolon:void_amulet"
+			}]
+		}
+		{
+			title: "Grasping at straws"
+			x: 2.0d
+			y: 4.5d
+			description: ["Create a prestigious palm, a stylish glove that extends your reach"]
+			dependencies: ["796494B4C153EC2C"]
+			id: "1BCC82D0B1D3E87C"
+			tasks: [{
+				id: "649897CE8A76AD91"
+				type: "item"
+				item: "eidolon:prestigious_palm"
+			}]
+		}
+		{
+			title: "Soulfully enchanting"
+			x: 2.0d
+			y: 0.0d
+			description: ["Create a soul enchanter, a more precise form of enchantment table that uses soul shards instead of levels, though this comes with some downsides."]
+			dependencies: [
+				"00572B7ED768106B"
+				"2B89B11813536F18"
+			]
+			id: "19D3A8E9714F20AC"
+			tasks: [{
+				id: "32A27700F3A2A0C3"
+				type: "item"
+				item: "eidolon:soul_enchanter"
+			}]
+		}
+		{
+			title: "Spellbound"
+			x: 4.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["Create a novice spellbook, which, combined with glyphs, allows you to cast preset sequences of small spells quickly and easily"]
+			dependencies: ["00572B7ED768106B"]
+			id: "2B7D72038A53E63D"
+			tasks: [{
+				id: "34104F5DE8739EBF"
+				type: "item"
+				item: "ars_nouveau:novice_spell_book"
+			}]
+		}
+		{
+			title: "Bloody hell"
+			x: 2.0d
+			y: -3.0d
+			shape: "hexagon"
+			description: ["Create a blood altar, used to collect life points in the form of blood- the start of your path to learn the darker forms of magic"]
+			dependencies: ["00572B7ED768106B"]
+			id: "36B52879DD93F79B"
+			tasks: [{
+				id: "6A714C763356DC02"
+				type: "item"
+				item: "bloodmagic:altar"
+			}]
+		}
+		{
+			title: "Bookworm"
+			x: 6.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["A mage's spellbook will allow you to store more spell presets at a time, as well as giving you the ability to cast higher level spells!"]
+			dependencies: ["2B7D72038A53E63D"]
+			id: "7B772225266E3EC2"
+			tasks: [{
+				id: "69E1C46B8A7F293F"
+				type: "item"
+				item: "ars_nouveau:apprentice_spell_book"
+			}]
+		}
+		{
+			title: "Certified librarian"
+			x: 8.0d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["You must be an avid reader! The highest tier of spellbook is not only a direct upgrade, but also serves as the core for creating CAD assemblies- a cutting edge fusion of magic and technology!"]
+			dependencies: ["7B772225266E3EC2"]
+			id: "21D4772C02C72D7A"
+			tasks: [{
+				id: "08823B3F9301006D"
+				type: "item"
+				item: "ars_nouveau:archmage_spell_book"
+			}]
+		}
+		{
+			title: "Spellslinging"
+			x: 11.5d
+			y: -1.5d
+			shape: "hexagon"
+			description: ["CAD assemblies operate on a similar principle to spellbooks, allowing you to program in a series of spells to run in sequence. With the right CAD and spell combinations, these can be a more powerful tool than anything else in existence"]
+			dependencies: ["21D4772C02C72D7A"]
+			dependency_requirement: "one_completed"
+			id: "5E4919FE2441AA06"
+			tasks: [{
+				id: "2D620B9EBEEB947D"
+				type: "item"
+				item: "psi:cad_assembly_iron"
+			}]
+		}
+	]
+}
