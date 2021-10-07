@@ -64,21 +64,21 @@ import mods.immersivepetroleum.DistillationBuilder;
   1024
 );
 
-<recipetype:immersivepetroleum:cokerunit>.addRecipe(
-  "kerosene_refining",
-  <item:immersiveengineering:dust_aluminum>*1,
-  <item:mekanism:salt>*1,
-  <tag:fluids:forge:kerosene>*200,
-  <tag:fluids:forge:fuel>*150,
-  1024
-);
+//<recipetype:immersivepetroleum:cokerunit>.addRecipe(
+//  "kerosene_refining",
+//  <item:immersiveengineering:dust_aluminum>*1,
+//  <item:mekanism:salt>*1,
+//  <tag:fluids:forge:kerosene>*200,
+//  <tag:fluids:forge:fuel>*150,
+//  1024
+//);
 
-new DistillationBuilder()
-  .setOutputFluids([<fluid:contenttweaker:kerosene>*600,<fluid:mekanism:ethene>*200,<fluid:contenttweaker:butane>*100])
-  .setInputFluid(<tag:fluids:forge:lubricant>,2000)
-  .addByproduct(<item:immersiveengineering:dust_sulfur>, 0.1)
-  .setEnergyAndTime(2048,1)
-  .build("kerosene_cracking");
-
-<recipetype:immersiveengineering:refinery>.addRecipe("refined_fuel", <tag:fluids:forge:fuel> * 10, <tag:fluids:forge:butane> * 10, 1024, <fluid:contenttweaker:refined_fuel> * 10);
-<recipetype:immersiveengineering:refinery>.addRecipe("rocket_fuel", <tag:fluids:forge:refined_fuel> * 10, <tag:fluids:forge:oxygen> * 10, 1024, <fluid:advancedrocketry:rocket_fuel> * 5);
+//new DistillationBuilder()
+//  .setOutputFluids([<fluid:contenttweaker:kerosene>*600,<fluid:mekanism:ethene>*200,<fluid:contenttweaker:butane>*100])
+//  .setInputFluid(<tag:fluids:forge:lubricant>,2000)
+//  .addByproduct(<item:immersiveengineering:dust_sulfur>, 0.1)
+//  .setEnergyAndTime(2048,1)
+//  .build("kerosene_cracking");
+//
+//<recipetype:immersiveengineering:refinery>.addRecipe("refined_fuel", <tag:fluids:forge:fuel> * 10, <tag:fluids:forge:butane> * 10, 1024, <fluid:contenttweaker:refined_fuel> * 10);
+//<recipetype:immersiveengineering:refinery>.addRecipe("rocket_fuel", <tag:fluids:forge:refined_fuel> * 10, <tag:fluids:forge:oxygen> * 10, 1024, <fluid:advancedrocketry:rocket_fuel> * 5);
