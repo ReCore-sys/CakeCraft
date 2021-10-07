@@ -40,9 +40,9 @@ craftingTable.removeRecipe(<item:tconstruct:copper_nugget>);
 craftingTable.removeRecipe(<item:tconstruct:copper_block>);
 craftingTable.removeRecipe(<item:create:copper_ingot>);
 craftingTable.removeRecipe(<item:create:copper_nugget>);
-craftingTable.removeRecipe(<item:libvulpes:ingotcopper>);
-craftingTable.removeRecipe(<item:libvulpes:nuggetcopper>);
-craftingTable.removeRecipe(<item:libvulpes:blockcopper>);
+//craftingTable.removeRecipe(<item:libvulpes:ingotcopper>);
+//craftingTable.removeRecipe(<item:libvulpes:nuggetcopper>);
+//craftingTable.removeRecipe(<item:libvulpes:blockcopper>);
 
 <recipetype:minecraft:smelting>.removeRecipe(<item:mekanism:ingot_copper>);
 <recipetype:minecraft:blasting>.removeRecipe(<item:mekanism:ingot_copper>);
@@ -52,8 +52,8 @@ craftingTable.removeRecipe(<item:libvulpes:blockcopper>);
 <recipetype:minecraft:blasting>.removeRecipe(<item:immersiveengineering:ingot_copper>);
 <recipetype:minecraft:smelting>.removeRecipe(<item:iceandfire:copper_ingot>);
 <recipetype:minecraft:blasting>.removeRecipe(<item:iceandfire:copper_ingot>);
-<recipetype:minecraft:smelting>.removeRecipe(<item:libvulpes:ingotcopper>);
-<recipetype:minecraft:blasting>.removeRecipe(<item:libvulpes:ingotcopper>);
+//<recipetype:minecraft:smelting>.removeRecipe(<item:libvulpes:ingotcopper>);
+//<recipetype:minecraft:blasting>.removeRecipe(<item:libvulpes:ingotcopper>);
 
 
 <recipetype:minecraft:blasting>.addRecipe("copperdustblast", <item:create:copper_ingot>,<tag:items:forge:dusts/copper>, 1.0, 100);
@@ -165,25 +165,25 @@ craftingTable.addShapeless("steelnuggettoingot", <item:immersiveengineering:ingo
 <recipetype:minecraft:blasting>.addRecipe("steeldustblast",<item:immersiveengineering:ingot_steel>,<tag:items:forge:dusts/steel>,1.0,100);
 
 // Aluminium
-<recipetype:minecraft:blasting>.removeRecipe(<item:libvulpes:ingotaluminum>);
-<recipetype:minecraft:smelting>.removeRecipe(<item:libvulpes:ingotaluminum>);
+//<recipetype:minecraft:blasting>.removeRecipe(<item:libvulpes:ingotaluminum>);
+//<recipetype:minecraft:smelting>.removeRecipe(<item:libvulpes:ingotaluminum>);
 
-craftingTable.removeRecipe(<item:libvulpes:ingotaluminum>);
-craftingTable.removeRecipe(<item:libvulpes:nuggetaluminum>);
-craftingTable.removeRecipe(<item:libvulpes:blockaluminum>);
-craftingTable.removeRecipe(<item:immersiveengineering:nugget_aluminum>);
-craftingTable.removeRecipe(<item:immersiveengineering:ingot_aluminum>);
-craftingTable.removeRecipe(<item:immersiveengineering:storage_aluminum>);
-
-craftingTable.addShapeless("aluingottoblock",<item:immersiveengineering:storage_aluminum>,[<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>]);
-craftingTable.addShapeless("alublocktoingot",<item:immersiveengineering:ingot_aluminum>*9,[<tag:items:forge:storage_blocks/aluminum>]);
-craftingTable.addShapeless("aluingottonugget",<item:immersiveengineering:nugget_aluminum>*9,[<tag:items:forge:ingots/aluminum>]);
-craftingTable.addShapeless("alunuggettoingot",<item:immersiveengineering:ingot_aluminum>,[<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>]);
-
+//craftingTable.removeRecipe(<item:libvulpes:ingotaluminum>);
+//craftingTable.removeRecipe(<item:libvulpes:nuggetaluminum>);
+//craftingTable.removeRecipe(<item:libvulpes:blockaluminum>);
+//craftingTable.removeRecipe(<item:immersiveengineering:nugget_aluminum>);
+//craftingTable.removeRecipe(<item:immersiveengineering:ingot_aluminum>);
+//craftingTable.removeRecipe(<item:immersiveengineering:storage_aluminum>);
+//
+//craftingTable.addShapeless("aluingottoblock",<item:immersiveengineering:storage_aluminum>,[<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>,<tag:items:forge:ingots/aluminum>]);
+//craftingTable.addShapeless("alublocktoingot",<item:immersiveengineering:ingot_aluminum>*9,[<tag:items:forge:storage_blocks/aluminum>]);
+//craftingTable.addShapeless("aluingottonugget",<item:immersiveengineering:nugget_aluminum>*9,[<tag:items:forge:ingots/aluminum>]);
+//craftingTable.addShapeless("alunuggettoingot",<item:immersiveengineering:ingot_aluminum>,[<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>,<tag:items:forge:nuggets/aluminum>]);
+//
 // Tin
-<recipetype:minecraft:blasting>.removeRecipe(<item:libvulpes:ingottin>);
-<recipetype:minecraft:smelting>.removeRecipe(<item:libvulpes:ingottin>);
+//<recipetype:minecraft:blasting>.removeRecipe(<item:libvulpes:ingottin>);
+//<recipetype:minecraft:smelting>.removeRecipe(<item:libvulpes:ingottin>);
 
-craftingTable.removeRecipe(<item:libvulpes:ingottin>);
-craftingTable.removeRecipe(<item:libvulpes:nuggettin>);
-craftingTable.removeRecipe(<item:libvulpes:blocktin>);
+//craftingTable.removeRecipe(<item:libvulpes:ingottin>);
+//craftingTable.removeRecipe(<item:libvulpes:nuggettin>);
+//craftingTable.removeRecipe(<item:libvulpes:blocktin>);
