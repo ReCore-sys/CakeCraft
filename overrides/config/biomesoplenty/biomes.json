@@ -19,7 +19,7 @@
       "weight": 5
     },
     "biomesoplenty:dead_forest": {
-      "weight": 1
+      "weight": 3
     },
     "biomesoplenty:dryland": {
       "weight": 3
@@ -67,7 +67,7 @@
       "weight": 7
     },
     "biomesoplenty:redwood_forest": {
-      "weight": 7
+      "weight": 5
     },
     "biomesoplenty:scrubland": {
       "weight": 7
@@ -134,7 +134,7 @@
     },
     "biomesoplenty:burnt_forest": {
       "weight": 100,
-      "rarity": 0.75
+      "rarity": 0.6
     },
     "biomesoplenty:coniferous_lakes": {
       "weight": 100,

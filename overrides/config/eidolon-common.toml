@@ -14,15 +14,15 @@
 	labEnabled = true
 	#Maximum number of blocks per lead ore vein
 	#Range: 1 ~ 255
-	leadOreVeinSize = 1
+	leadOreVeinSize = 6
 	#Number of lead ore veins per chunk
 	#Range: 0 ~ 255
 	leadOreVeinCount = 6
 	#Whether lead ore is enabled. Set to false to disable spawning.
-	leadEnabled = false
+	leadEnabled = true
 	#Rarity of the lab structure. Higher numbers mean rarer structures.
 	#Range: 1.0 ~ 1000.0
-	labRarity = 3.0
+	labRarity = 4.0
 	#Rarity of the stray tower structure. Higher numbers mean rarer structures.
 	#Range: 1.0 ~ 1000.0
 	strayTowerRarity = 4.0

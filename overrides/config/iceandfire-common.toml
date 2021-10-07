@@ -3,9 +3,9 @@
 
 	[Generation.Ores]
 		#Whether to generate copper ore or not
-		"Generate Copper Ore" = false
+		"Generate Copper Ore" = true
 		#Whether to generate silver ore or not
-		"Generate Silver Ore" = false
+		"Generate Silver Ore" = true
 		#Whether to generate sapphire ore or not
 		"Generate Sapphire Ore" = true
 		#Whether to generate amethyst ore or not
@@ -192,8 +192,8 @@
 		#Range: 1.0 ~ 10000.0
 		"Hydra Max Health" = 250.0
 		#Villager Scribe House generation weight. Lower = lower chance to spawn
-		#Range: 30 ~ 10000
-		"Villager Scribe House Weight" = 30
+		#Range: 0 ~ 10000
+		"Villager Scribe House Weight" = 22
 		#One out of this number chance per chunk to generate a hydra cave.
 		#Range: 1 ~ 10000
 		"Hydra Caves Gen Chance" = 100
@@ -323,15 +323,15 @@
 		"Myrmex Colony Gen Chance" = 150
 		#True if myrmex colonies are allowed to spawn
 		"Spawn Myrmex" = true
-		#The maximum radius myrmex area allowed to wander/forage
-		#Range: 100 ~ 20000
-		"Myrmex Maximum Wnader Radius" = 4000
 		#How many ticks it takes for a Myrmex Queen to produce an egg.
 		#Range: 1 ~ 10000
 		"Myrmex Gestation Length" = 2500
 		#Base Myrmex(worker) attack strength
 		#Range: 1.0 ~ 10000.0
 		"Myrmex Base Attack Strength" = 3.0
+		#The maximum radius myrmex area allowed to wander/forage
+		#Range: 25 ~ 4000
+		"Myrmex Maximum Wander Radius" = 50
 		#How many maximum individuals a myrmex colony can have.
 		#Range: 10 ~ 10000
 		"Myrmex Colony Max Size" = 80

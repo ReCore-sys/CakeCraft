@@ -2,7 +2,7 @@
 #Common configuration settings. Most other configuration can be found in the world (server)configuration folder
 [common]
 	#Use the vanilla campfire block instead of Vampirism's much cooler one
-	useVanillaCampfire = true
+	useVanillaCampfire = false
 	#Desired maximum distance between villages in chunks
 	#Range: 1 ~ 100
 	villageDistance = 26
@@ -16,7 +16,7 @@
 	#Send mod version, MC version and mod count to mod author
 	collectStats = true
 	#INTERNAL - Set to 'never' if you don't want to be notified about integration mods
-	integrationsNotifier = "waila:bloodmagic:biomesoplenty"
+	integrationsNotifier = "waila:bloodmagic:biomesoplenty:"
 	#INTERNAL
 	optifineBloodvisionWarning = false
 
@@ -40,20 +40,6 @@
 		enableHunterTentGeneration = true
 		#Range: > 0
 		vampireForestWeight = 3
-
-		#You might find some configuration values in the common section instead of here
-		[common-server.world.village]
-			#Weight of the Totem Building inside the Village
-			#Range: > 0
-			totemWeight = 20
-			#Whether village Temples should be replaced with versions that contain church altars.
-			villageReplaceTemples = true
-			#Chance for a totem to have a faction after generation
-			#Range: 0.0 ~ 1.0
-			villageTotemFactionChance = 0.6
-			#Weight of the Hunter Trainer Building inside the Village
-			#Range: > 0
-			villageHunterTrainerWeight = 400
 
 	[common-server.mobspawn]
 		#Vampire baron spawn chance in vampire forest (reference vampire in forest: 35)

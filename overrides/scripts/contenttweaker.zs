@@ -1,4 +1,5 @@
 #loader contenttweaker
+
 import mods.contenttweaker.item.ItemBuilder;
 import mods.contenttweaker.item.tool.ItemBuilderTool;
 
@@ -6,6 +7,8 @@ import mods.contenttweaker.block.BlockBuilder;
 import mods.contenttweaker.block.basic.BlockBuilderBasic;
 
 import mods.contenttweaker.fluid.FluidBuilder;
+
+
 
 new ItemBuilder().build("osmium_plate");
 new ItemBuilder().build("blank_circuitboard");

@@ -49,7 +49,7 @@
 	#Generate Cobalt
 	generateCobalt = true
 	#Generate Copper
-	generateCopper = false
+	generateCopper = true
 	#Approx Ores per Chunk
 	veinCountCobalt = 8
 	#Approx Ores per Chunk
@@ -70,7 +70,7 @@
 		[worldgen.slime_islands.earth]
 			#How many chunks on average between islands
 			#Range: 10 ~ 500
-			separation = 15
+			separation = 25
 			#If true, this island generates
 			generate = true
 

@@ -65,7 +65,7 @@
     [<item:psi:ivory_psimetal>,<item:psi:cad_assembly_psimetal>,<item:psi:ivory_psimetal>],
     [<item:psi:ivory_substance>,<item:mekanism:pellet_polonium>,<item:psi:ivory_substance>]
 ]);
-
+/*
 <recipetype:create:mechanical_crafting>.addRecipe("advancedmachineframe",
   <item:libvulpes:adv_structure_machine>*4,[
     [<item:minecraft:air>,<tag:items:forge:plates/titaniumiridium>,<tag:items:forge:plates/titaniumiridium>,<tag:items:forge:plates/titaniumiridium>,<item:minecraft:air>],
@@ -73,7 +73,7 @@
     [<tag:items:forge:plates/titaniumiridium>,<tag:items:forge:sticks/titaniumiridium>,<item:mekanism:pellet_antimatter>,<tag:items:forge:sticks/titaniumiridium>,<tag:items:forge:plates/titaniumiridium>],
     [<tag:items:forge:plates/titaniumiridium>,<item:minecraft:air>,<tag:items:forge:sticks/titaniumiridium>,<item:minecraft:air>,<tag:items:forge:plates/titaniumiridium>],
     [<item:minecraft:air>,<tag:items:forge:plates/titaniumiridium>,<tag:items:forge:plates/titaniumiridium>,<tag:items:forge:plates/titaniumiridium>,<item:minecraft:air>]
-]);
+]);*/
 recipes.addJSONRecipe("alcasing",{
   "type":"create:sequenced_assembly",
   "ingredient":{"item":"immersiveengineering:sheetmetal_aluminum"},

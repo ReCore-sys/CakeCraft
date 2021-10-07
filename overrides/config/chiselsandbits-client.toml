@@ -1,7 +1,7 @@
 
 [client]
 
-	#mod.chiselsandbits.config.client.settings.comment
+	#Configuration entries related to the settings of gameplay aspects.
 	[client.settings]
 		#When enabled allows cycling through the tool modes of the chisel using (sneak) right clicks.
 		enable-right-click-mode-change = false
@@ -51,7 +51,7 @@
 			[client.client.performance.models]
 
 				[client.client.performance.models.cache]
-					#mod.chiselsandbits.config.client.performance.models.cache.size.comment
+					#The size of the model cache.
 					#Range: 0 ~ 2000
 					size = 1000
 
@@ -80,4 +80,13 @@
 				#The max hit box size of a chiselable region. Bigger requires more performance and more memory.
 				#Range: 4.9E-324 ~ 1.7976931348623157E308
 				size = 4.0
+
+		[client.client.client]
+
+			#client.gui
+			[client.client.client.gui]
+
+				[client.client.client.gui.radial-menu]
+					#radial-menu.mouse-indicator
+					mouse-indicator = false
 
