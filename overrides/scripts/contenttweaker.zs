@@ -30,8 +30,8 @@ new BlockBuilder().withHardnessAndResistance(1f, 0.5f).setRequiresTool().withHar
 new BlockBuilder().withHardnessAndResistance(1f, 0.5f).setRequiresTool().withHarvestTool(<tooltype:pickaxe>).withHarvestLevel(1).build("fluorite_block");
 new BlockBuilder().withHardnessAndResistance(1f, 0.5f).setRequiresTool().withHarvestTool(<tooltype:pickaxe>).withHarvestLevel(2).build("aluminium_casing");
 
-new FluidBuilder(false, 0xb3822601).build("kerosene");
-new FluidBuilder(false, 0xb3f2edbd).build("butane");
-new FluidBuilder(false, 0xb3942d22).build("fuel");
-new FluidBuilder(false, 0xb3b53f00).build("refined_fuel");
+//new FluidBuilder(false, 0xb3822601).build("kerosene");
+//new FluidBuilder(false, 0xb3f2edbd).build("butane");
+//new FluidBuilder(false, 0xb3942d22).build("fuel");
+//new FluidBuilder(false, 0xb3b53f00).build("refined_fuel");
 new FluidBuilder(false, 0xb3e0ffff).build("alumina_solution");
