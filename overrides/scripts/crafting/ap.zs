@@ -1,5 +1,5 @@
 craftingTable.removeRecipe(<item:advancedperipherals:ar_goggles>);
-println("Loaded");
+println("Loaded AP scripts");
 
 craftingTable.addShaped("argoggles",
   <item:advancedperipherals:ar_goggles>,[
