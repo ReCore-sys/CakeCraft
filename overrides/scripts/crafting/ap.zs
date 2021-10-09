@@ -35,3 +35,48 @@ craftingTable.addShaped("energy_detector",
     [<item:computercraft:cable>,<item:advancedperipherals:peripheral_casing>,<item:computercraft:cable>],
     [<tag:items:forge:ingots/steel>,<item:minecraft:redstone>,<tag:items:forge:ingots/steel>]
 ]);
+
+craftingTable.removeRecipe(<item:advancedperipherals:memory_card>);
+
+craftingTable.addShaped("mem_card",
+  <item:advancedperipherals:memory_card>,[
+    [<tag:items:forge:ingots/iron>,<item:appliedenergistics2:basic_card>,<tag:items:forge:ingots/iron>],
+    [<tag:items:forge:ingots/iron>,<item:appliedenergistics2:biometric_card>,<tag:items:forge:ingots/iron>],
+    [<tag:items:forge:alloys/elite>,<tag:items:forge:alloys/ultimate>,<tag:items:forge:alloys/elite>]
+]);
+
+craftingTable.removeRecipe(<item:advancedperipherals:inventory_manager>);
+
+craftingTable.addShaped("inv_manager",
+  <item:advancedperipherals:inventory_manager>,[
+    [<tag:items:forge:ingots/iron>,<item:mekanism:teleportation_core>,<tag:items:forge:ingots/iron>],
+    [<item:advancedperipherals:peripheral_casing>,<item:immersiveengineering:crate>,<item:advancedperipherals:peripheral_casing>],
+    [<tag:items:forge:alloys/elite>,<item:mekanism:teleportation_core>,<tag:items:forge:alloys/elite>]
+]);
+
+craftingTable.removeRecipe(<item:advancedperipherals:block_reader>);
+
+craftingTable.addShaped("block_reader",
+  <item:advancedperipherals:block_reader>,[
+    [<tag:items:forge:ingots/iron>,<item:minecraft:redstone_block>,<tag:items:forge:ingots/iron>],
+    [<item:quark:biotite>,<item:advancedperipherals:peripheral_casing>,<item:quark:biotite>],
+    [<item:minecraft:observer>,<item:minecraft:redstone_block>,<item:minecraft:observer>]
+]);
+
+craftingTable.removeRecipe(<item:advancedperipherals:geo_scanner>);
+
+craftingTable.addShaped("geo_scanner",
+  <item:advancedperipherals:geo_scanner>,[
+    [<tag:items:forge:alloys/elite>,<item:create:mechanical_drill>,<tag:items:forge:alloys/elite>],
+    [<item:quark:biotite>,<item:advancedperipherals:block_reader>,<item:quark:biotite>],
+    [<item:minecraft:observer>,<item:minecraft:redstone_block>,<item:minecraft:observer>]
+]);
+
+craftingTable.removeRecipe(<item:advancedperipherals:nbt_storage>);
+
+craftingTable.addShaped("nbt_storage",
+  <item:advancedperipherals:nbt_storage>,[
+    [<tag:items:forge:alloys/ultimate>,<tag:items:forge:chests>,<tag:items:forge:alloys/ultimate>],
+    [<tag:items:forge:chests>,<tag:items:forge:storage_blocks/uranium>,<tag:items:forge:chests>],
+    [<item:minecraft:redstone_block>,<tag:items:forge:chests>,<item:minecraft:redstone_block>]
+]);
