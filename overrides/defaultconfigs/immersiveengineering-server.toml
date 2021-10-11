@@ -13,13 +13,13 @@ enableWireDamage = true
 [wires.electrum]
 #The transfer rate of electrum wire in IF/t
 #Range: > 0
-transferRate = 8192
+transferRate = 32768
 #The percentage of power lost every 16 blocks of distance in electrum wire
 #Range: 0.0 ~ 1.0
 loss = 0
 #In- and output rates of electrum wire connectors. This is independant of the transferrate of the wires.
 #Range: > 0
-wireConnectorInput = 1024
+wireConnectorInput = 4096
 #The maximum length of electrum wires
 #Range: > 0
 maxLength = 16
@@ -42,13 +42,13 @@ maxLength = 32
 [wires.copper]
 #The transfer rate of copper wire in IF/t
 #Range: > 0
-transferRate = 2048
+transferRate = 8192
 #The percentage of power lost every 16 blocks of distance in copper wire
 #Range: 0.0 ~ 1.0
 loss = 0
 #In- and output rates of copper wire connectors. This is independant of the transferrate of the wires.
 #Range: > 0
-wireConnectorInput = 256
+wireConnectorInput = 1024
 #The maximum length of copper wires
 #Range: > 0
 maxLength = 16
@@ -61,13 +61,13 @@ maxLength = 32
 [wires.hv]
 #The transfer rate of hv wire in IF/t
 #Range: > 0
-transferRate = 32768
+transferRate = 131072
 #The percentage of power lost every 16 blocks of distance in hv wire
 #Range: 0.0 ~ 1.0
 loss = 0
 #In- and output rates of hv wire connectors. This is independant of the transferrate of the wires.
 #Range: > 0
-wireConnectorInput = 4096
+wireConnectorInput = 16384
 #The maximum length of hv wires
 #Range: > 0
 maxLength = 32
